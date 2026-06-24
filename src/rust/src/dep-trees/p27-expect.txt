@@ -1,130 +1,4 @@
-soroban-bench-utils v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-bench-utils)
-├── perf-event v0.4.8
-│   ├── libc v0.2.176
-│   └── perf-event-open-sys v4.0.0
-│       └── libc v0.2.176
-├── soroban-env-common v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-common)
-│   ├── arbitrary v1.3.2
-│   │   └── derive_arbitrary v1.3.2 (proc-macro)
-│   │       ├── proc-macro2 v1.0.69
-│   │       │   └── unicode-ident v1.0.9
-│   │       ├── quote v1.0.33
-│   │       │   └── proc-macro2 v1.0.69 (*)
-│   │       └── syn v2.0.39
-│   │           ├── proc-macro2 v1.0.69 (*)
-│   │           ├── quote v1.0.33 (*)
-│   │           └── unicode-ident v1.0.9
-│   ├── ethnum v1.5.3
-│   ├── num-derive v0.4.1 (proc-macro)
-│   │   ├── proc-macro2 v1.0.69 (*)
-│   │   ├── quote v1.0.33 (*)
-│   │   └── syn v2.0.39 (*)
-│   ├── num-traits v0.2.17
-│   │   [build-dependencies]
-│   │   └── autocfg v1.1.0
-│   ├── soroban-env-macros v27.0.0 (proc-macro) (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-macros)
-│   │   ├── itertools v0.13.0
-│   │   │   └── either v1.8.1
-│   │   ├── proc-macro2 v1.0.69 (*)
-│   │   ├── quote v1.0.33 (*)
-│   │   ├── serde v1.0.192
-│   │   │   └── serde_derive v1.0.192 (proc-macro)
-│   │   │       ├── proc-macro2 v1.0.69 (*)
-│   │   │       ├── quote v1.0.33 (*)
-│   │   │       └── syn v2.0.39 (*)
-│   │   ├── serde_json v1.0.108
-│   │   │   ├── itoa v1.0.6
-│   │   │   ├── ryu v1.0.13
-│   │   │   └── serde v1.0.192 (*)
-│   │   ├── stellar-xdr v27.0.0
-│   │   │   ├── escape-bytes v0.1.1
-│   │   │   ├── ethnum v1.5.3
-│   │   │   ├── hex v0.4.3
-│   │   │   ├── sha2 v0.10.9
-│   │   │   │   ├── cfg-if v1.0.0
-│   │   │   │   ├── cpufeatures v0.2.8
-│   │   │   │   │   └── libc v0.2.176
-│   │   │   │   └── digest v0.10.7
-│   │   │   │       ├── block-buffer v0.10.4
-│   │   │   │       │   └── generic-array v0.14.7
-│   │   │   │       │       └── typenum v1.16.0
-│   │   │   │       │       [build-dependencies]
-│   │   │   │       │       └── version_check v0.9.4
-│   │   │   │       └── crypto-common v0.1.6
-│   │   │   │           ├── generic-array v0.14.7 (*)
-│   │   │   │           └── typenum v1.16.0
-│   │   │   └── stellar-strkey v0.0.13
-│   │   │       └── data-encoding v2.6.0
-│   │   │       [build-dependencies]
-│   │   │       └── crate-git-revision v0.0.6
-│   │   │           ├── serde v1.0.192 (*)
-│   │   │           ├── serde_derive v1.0.192 (proc-macro) (*)
-│   │   │           └── serde_json v1.0.108 (*)
-│   │   │   [build-dependencies]
-│   │   │   └── crate-git-revision v0.0.6 (*)
-│   │   └── syn v2.0.39 (*)
-│   ├── soroban-wasmi v0.31.1-soroban.20.0.1 (https://github.com/stellar/wasmi?rev=0ed3f3dee30dc41ebe21972399e0a73a41944aa0#0ed3f3de)
-│   │   ├── smallvec v1.13.2
-│   │   ├── spin v0.9.8
-│   │   ├── wasmi_arena v0.4.0 (https://github.com/stellar/wasmi?rev=0ed3f3dee30dc41ebe21972399e0a73a41944aa0#0ed3f3de)
-│   │   ├── wasmi_core v0.13.0 (https://github.com/stellar/wasmi?rev=0ed3f3dee30dc41ebe21972399e0a73a41944aa0#0ed3f3de)
-│   │   │   ├── downcast-rs v1.2.0
-│   │   │   ├── libm v0.2.8
-│   │   │   ├── num-traits v0.2.17 (*)
-│   │   │   └── paste v1.0.12 (proc-macro)
-│   │   └── wasmparser-nostd v0.100.2
-│   │       └── indexmap-nostd v0.4.0
-│   ├── static_assertions v1.1.0
-│   ├── stellar-xdr v27.0.0
-│   │   ├── arbitrary v1.3.2 (*)
-│   │   ├── base64 v0.22.1
-│   │   ├── escape-bytes v0.1.1
-│   │   ├── ethnum v1.5.3
-│   │   ├── hex v0.4.3
-│   │   ├── sha2 v0.10.9 (*)
-│   │   └── stellar-strkey v0.0.13 (*)
-│   │   [build-dependencies]
-│   │   └── crate-git-revision v0.0.6 (*)
-│   └── wasmparser v0.116.1
-│       ├── indexmap v2.0.2
-│       │   ├── equivalent v1.0.1
-│       │   └── hashbrown v0.14.1
-│       └── semver v1.0.17
-│   [build-dependencies]
-│   └── crate-git-revision v0.0.6 (*)
-│   [dev-dependencies]
-│   ├── num-traits v0.2.17 (*)
-│   └── num_enum v0.7.1
-│       └── num_enum_derive v0.7.1 (proc-macro)
-│           ├── proc-macro-crate v2.0.0
-│           │   └── toml_edit v0.20.7
-│           │       ├── indexmap v2.0.2 (*)
-│           │       ├── toml_datetime v0.6.5
-│           │       └── winnow v0.5.19
-│           ├── proc-macro2 v1.0.69 (*)
-│           ├── quote v1.0.33 (*)
-│           └── syn v2.0.39 (*)
-└── tracking-allocator v0.4.0
-    ├── tracing v0.1.40
-    │   ├── pin-project-lite v0.2.13
-    │   └── tracing-core v0.1.32
-    │       └── once_cell v1.19.0
-    └── tracing-subscriber v0.3.18
-        └── tracing-core v0.1.32 (*)
-
-soroban-builtin-sdk-macros v27.0.0 (proc-macro) (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-builtin-sdk-macros)
-├── itertools v0.13.0 (*)
-├── proc-macro2 v1.0.69 (*)
-├── quote v1.0.33 (*)
-└── syn v2.0.39 (*)
-
-soroban-env-common v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-common) (*)
-
-soroban-env-guest v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-guest)
-├── soroban-env-common v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-common) (*)
-└── static_assertions v1.1.0
-
-soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-host)
+soroban-env-host v27.0.0 (src/rust/soroban/p27/soroban-env-host)
 ├── ark-bls12-381 v0.5.0
 │   ├── ark-ec v0.5.0
 │   │   ├── ahash v0.8.11
@@ -132,9 +6,14 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   │   │   ├── once_cell v1.19.0
 │   │   │   └── zerocopy v0.7.35
 │   │   │       └── zerocopy-derive v0.7.35 (proc-macro)
-│   │   │           ├── proc-macro2 v1.0.69 (*)
-│   │   │           ├── quote v1.0.33 (*)
-│   │   │           └── syn v2.0.39 (*)
+│   │   │           ├── proc-macro2 v1.0.69
+│   │   │           │   └── unicode-ident v1.0.9
+│   │   │           ├── quote v1.0.33
+│   │   │           │   └── proc-macro2 v1.0.69 (*)
+│   │   │           └── syn v2.0.39
+│   │   │               ├── proc-macro2 v1.0.69 (*)
+│   │   │               ├── quote v1.0.33 (*)
+│   │   │               └── unicode-ident v1.0.9
 │   │   │   [build-dependencies]
 │   │   │   └── version_check v0.9.4
 │   │   ├── ark-ff v0.5.0
@@ -162,7 +41,9 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   │   │   │   │   ├── quote v1.0.33 (*)
 │   │   │   │   │   └── syn v2.0.39 (*)
 │   │   │   │   ├── ark-std v0.5.0
-│   │   │   │   │   ├── num-traits v0.2.17 (*)
+│   │   │   │   │   ├── num-traits v0.2.17
+│   │   │   │   │   │   [build-dependencies]
+│   │   │   │   │   │   └── autocfg v1.1.0
 │   │   │   │   │   └── rand v0.8.5
 │   │   │   │   │       ├── libc v0.2.176
 │   │   │   │   │       ├── rand_chacha v0.3.1
@@ -196,18 +77,22 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   │   │   │   │       └── rand_core v0.6.4 (*)
 │   │   │   │   ├── arrayvec v0.7.6
 │   │   │   │   ├── digest v0.10.7
-│   │   │   │   │   ├── block-buffer v0.10.4 (*)
+│   │   │   │   │   ├── block-buffer v0.10.4
+│   │   │   │   │   │   └── generic-array v0.14.7
+│   │   │   │   │   │       ├── typenum v1.16.0
+│   │   │   │   │   │       └── zeroize v1.8.1
+│   │   │   │   │   │           └── zeroize_derive v1.4.2 (proc-macro)
+│   │   │   │   │   │               ├── proc-macro2 v1.0.69 (*)
+│   │   │   │   │   │               ├── quote v1.0.33 (*)
+│   │   │   │   │   │               └── syn v2.0.39 (*)
+│   │   │   │   │   │       [build-dependencies]
+│   │   │   │   │   │       └── version_check v0.9.4
 │   │   │   │   │   ├── const-oid v0.9.2
-│   │   │   │   │   ├── crypto-common v0.1.6 (*)
+│   │   │   │   │   ├── crypto-common v0.1.6
+│   │   │   │   │   │   ├── generic-array v0.14.7 (*)
+│   │   │   │   │   │   └── typenum v1.16.0
 │   │   │   │   │   └── subtle v2.5.0
-│   │   │   │   └── num-bigint v0.4.4
-│   │   │   │       ├── num-integer v0.1.45
-│   │   │   │       │   └── num-traits v0.2.17 (*)
-│   │   │   │       │   [build-dependencies]
-│   │   │   │       │   └── autocfg v1.1.0
-│   │   │   │       └── num-traits v0.2.17 (*)
-│   │   │   │       [build-dependencies]
-│   │   │   │       └── autocfg v1.1.0
+│   │   │   │   └── num-bigint v0.4.4 (*)
 │   │   │   ├── ark-std v0.5.0 (*)
 │   │   │   ├── arrayvec v0.7.6
 │   │   │   ├── digest v0.10.7 (*)
@@ -220,15 +105,12 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   │   │   │   ├── proc-macro2 v1.0.69 (*)
 │   │   │   │   ├── quote v1.0.33 (*)
 │   │   │   │   └── syn v2.0.39 (*)
-│   │   │   ├── itertools v0.13.0 (*)
+│   │   │   ├── itertools v0.13.0
+│   │   │   │   └── either v1.8.1
 │   │   │   ├── num-bigint v0.4.4 (*)
 │   │   │   ├── num-traits v0.2.17 (*)
 │   │   │   ├── paste v1.0.12 (proc-macro)
-│   │   │   └── zeroize v1.8.1
-│   │   │       └── zeroize_derive v1.4.2 (proc-macro)
-│   │   │           ├── proc-macro2 v1.0.69 (*)
-│   │   │           ├── quote v1.0.33 (*)
-│   │   │           └── syn v2.0.39 (*)
+│   │   │   └── zeroize v1.8.1 (*)
 │   │   ├── ark-poly v0.5.0
 │   │   │   ├── ahash v0.8.11 (*)
 │   │   │   ├── ark-ff v0.5.0 (*)
@@ -245,7 +127,10 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   │   ├── hashbrown v0.15.5 (*)
 │   │   ├── itertools v0.13.0 (*)
 │   │   ├── num-bigint v0.4.4 (*)
-│   │   ├── num-integer v0.1.45 (*)
+│   │   ├── num-integer v0.1.45
+│   │   │   └── num-traits v0.2.17 (*)
+│   │   │   [build-dependencies]
+│   │   │   └── autocfg v1.1.0
 │   │   ├── num-traits v0.2.17 (*)
 │   │   └── zeroize v1.8.1 (*)
 │   ├── ark-ff v0.5.0 (*)
@@ -260,7 +145,8 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 ├── ark-serialize v0.5.0 (*)
 ├── curve25519-dalek v4.1.3
 │   ├── cfg-if v1.0.0
-│   ├── cpufeatures v0.2.8 (*)
+│   ├── cpufeatures v0.2.8
+│   │   └── libc v0.2.176
 │   ├── curve25519-dalek-derive v0.1.0 (proc-macro)
 │   │   ├── proc-macro2 v1.0.69 (*)
 │   │   ├── quote v1.0.33 (*)
@@ -280,11 +166,7 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   ├── elliptic-curve v0.13.8
 │   │   ├── base16ct v0.2.0
 │   │   ├── crypto-bigint v0.5.2
-│   │   │   ├── generic-array v0.14.7
-│   │   │   │   ├── typenum v1.16.0
-│   │   │   │   └── zeroize v1.8.1 (*)
-│   │   │   │   [build-dependencies]
-│   │   │   │   └── version_check v0.9.4
+│   │   │   ├── generic-array v0.14.7 (*)
 │   │   │   ├── rand_core v0.6.4 (*)
 │   │   │   ├── subtle v2.5.0
 │   │   │   └── zeroize v1.8.1 (*)
@@ -310,17 +192,18 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   │   ├── hmac v0.12.1
 │   │   │   └── digest v0.10.7 (*)
 │   │   └── subtle v2.5.0
-│   ├── signature v2.1.0
-│   │   ├── digest v0.10.7 (*)
-│   │   └── rand_core v0.6.4 (*)
-│   └── spki v0.7.2
-│       └── der v0.7.6 (*)
+│   └── signature v2.1.0
+│       ├── digest v0.10.7 (*)
+│       └── rand_core v0.6.4 (*)
 ├── ed25519-dalek v2.1.1
 │   ├── curve25519-dalek v4.1.3 (*)
 │   ├── ed25519 v2.2.2
 │   │   └── signature v2.1.0 (*)
 │   ├── rand_core v0.6.4 (*)
-│   ├── sha2 v0.10.9 (*)
+│   ├── sha2 v0.10.9
+│   │   ├── cfg-if v1.0.0
+│   │   ├── cpufeatures v0.2.8 (*)
+│   │   └── digest v0.10.7 (*)
 │   ├── subtle v2.5.0
 │   └── zeroize v1.8.1 (*)
 ├── elliptic-curve v0.13.8 (*)
@@ -333,7 +216,10 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   ├── ecdsa v0.16.9 (*)
 │   ├── elliptic-curve v0.13.8 (*)
 │   └── sha2 v0.10.9 (*)
-├── num-derive v0.4.1 (proc-macro) (*)
+├── num-derive v0.4.1 (proc-macro)
+│   ├── proc-macro2 v1.0.69 (*)
+│   ├── quote v1.0.33 (*)
+│   └── syn v2.0.39 (*)
 ├── num-integer v0.1.45 (*)
 ├── num-traits v0.2.17 (*)
 ├── p256 v0.13.2
@@ -350,160 +236,73 @@ soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/sr
 │   ├── digest v0.10.7 (*)
 │   └── keccak v0.1.4
 │       └── cpufeatures v0.2.8 (*)
-├── soroban-builtin-sdk-macros v27.0.0 (proc-macro) (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-builtin-sdk-macros) (*)
-├── soroban-env-common v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-common) (*)
+├── soroban-builtin-sdk-macros v27.0.0 (proc-macro) (src/rust/soroban/p27/soroban-builtin-sdk-macros)
+│   ├── itertools v0.13.0
+│   │   └── either v1.8.1
+│   ├── proc-macro2 v1.0.69 (*)
+│   ├── quote v1.0.33 (*)
+│   └── syn v2.0.39 (*)
+├── soroban-env-common v27.0.0 (src/rust/soroban/p27/soroban-env-common)
+│   ├── ethnum v1.5.3
+│   ├── num-derive v0.4.1 (proc-macro) (*)
+│   ├── num-traits v0.2.17 (*)
+│   ├── soroban-env-macros v27.0.0 (proc-macro) (src/rust/soroban/p27/soroban-env-macros)
+│   │   ├── itertools v0.13.0 (*)
+│   │   ├── proc-macro2 v1.0.69 (*)
+│   │   ├── quote v1.0.33 (*)
+│   │   ├── serde v1.0.192
+│   │   │   └── serde_derive v1.0.192 (proc-macro)
+│   │   │       ├── proc-macro2 v1.0.69 (*)
+│   │   │       ├── quote v1.0.33 (*)
+│   │   │       └── syn v2.0.39 (*)
+│   │   ├── serde_json v1.0.108
+│   │   │   ├── itoa v1.0.6
+│   │   │   ├── ryu v1.0.13
+│   │   │   └── serde v1.0.192 (*)
+│   │   ├── stellar-xdr v27.0.0
+│   │   │   ├── escape-bytes v0.1.1
+│   │   │   ├── ethnum v1.5.3
+│   │   │   ├── hex v0.4.3
+│   │   │   ├── sha2 v0.10.9 (*)
+│   │   │   └── stellar-strkey v0.0.13
+│   │   │       └── data-encoding v2.6.0
+│   │   │       [build-dependencies]
+│   │   │       └── crate-git-revision v0.0.6
+│   │   │           ├── serde v1.0.192 (*)
+│   │   │           ├── serde_derive v1.0.192 (proc-macro) (*)
+│   │   │           └── serde_json v1.0.108 (*)
+│   │   │   [build-dependencies]
+│   │   │   └── crate-git-revision v0.0.6 (*)
+│   │   └── syn v2.0.39 (*)
+│   ├── soroban-wasmi v0.31.1-soroban.20.0.1 (https://github.com/stellar/wasmi?rev=0ed3f3dee30dc41ebe21972399e0a73a41944aa0#0ed3f3de)
+│   │   ├── smallvec v1.13.2
+│   │   ├── spin v0.9.8
+│   │   ├── wasmi_arena v0.4.0 (https://github.com/stellar/wasmi?rev=0ed3f3dee30dc41ebe21972399e0a73a41944aa0#0ed3f3de)
+│   │   ├── wasmi_core v0.13.0 (https://github.com/stellar/wasmi?rev=0ed3f3dee30dc41ebe21972399e0a73a41944aa0#0ed3f3de)
+│   │   │   ├── downcast-rs v1.2.0
+│   │   │   ├── libm v0.2.8
+│   │   │   ├── num-traits v0.2.17 (*)
+│   │   │   └── paste v1.0.12 (proc-macro)
+│   │   └── wasmparser-nostd v0.100.2
+│   │       └── indexmap-nostd v0.4.0
+│   ├── static_assertions v1.1.0
+│   ├── stellar-xdr v27.0.0
+│   │   ├── base64 v0.22.1
+│   │   ├── escape-bytes v0.1.1
+│   │   ├── ethnum v1.5.3
+│   │   ├── hex v0.4.3
+│   │   ├── sha2 v0.10.9 (*)
+│   │   └── stellar-strkey v0.0.13 (*)
+│   │   [build-dependencies]
+│   │   └── crate-git-revision v0.0.6 (*)
+│   └── wasmparser v0.116.1
+│       ├── indexmap v2.0.2
+│       │   ├── equivalent v1.0.1
+│       │   └── hashbrown v0.14.1
+│       └── semver v1.0.17
+│   [build-dependencies]
+│   └── crate-git-revision v0.0.6 (*)
 ├── soroban-wasmi v0.31.1-soroban.20.0.1 (https://github.com/stellar/wasmi?rev=0ed3f3dee30dc41ebe21972399e0a73a41944aa0#0ed3f3de) (*)
 ├── static_assertions v1.1.0
 ├── stellar-strkey v0.0.13 (*)
 └── wasmparser v0.116.1 (*)
-[dev-dependencies]
-├── arbitrary v1.3.2 (*)
-├── backtrace v0.3.76
-│   ├── addr2line v0.25.1
-│   │   └── gimli v0.32.3
-│   ├── cfg-if v1.0.0
-│   ├── libc v0.2.176
-│   ├── miniz_oxide v0.8.9
-│   │   └── adler2 v2.0.1
-│   ├── object v0.37.3
-│   │   └── memchr v2.6.4
-│   ├── rustc-demangle v0.1.26
-│   └── windows-link v0.2.1
-├── bytes-lit v0.0.5 (proc-macro)
-│   ├── num-bigint v0.4.4 (*)
-│   ├── proc-macro2 v1.0.69 (*)
-│   ├── quote v1.0.33 (*)
-│   └── syn v2.0.39 (*)
-├── expect-test v1.4.1
-│   ├── dissimilar v1.0.7
-│   └── once_cell v1.19.0
-├── hex v0.4.3
-├── itertools v0.13.0 (*)
-├── k256 v0.13.4 (*)
-├── lazy_static v1.5.0
-├── lstsq v0.5.0
-│   └── nalgebra v0.32.3
-│       ├── approx v0.5.1
-│       │   └── num-traits v0.2.17 (*)
-│       ├── matrixmultiply v0.3.8
-│       │   └── rawpointer v0.2.1
-│       │   [build-dependencies]
-│       │   └── autocfg v1.1.0
-│       ├── num-complex v0.4.4
-│       │   └── num-traits v0.2.17 (*)
-│       ├── num-rational v0.4.1
-│       │   ├── num-integer v0.1.45 (*)
-│       │   └── num-traits v0.2.17 (*)
-│       │   [build-dependencies]
-│       │   └── autocfg v1.1.0
-│       ├── num-traits v0.2.17 (*)
-│       ├── simba v0.8.1
-│       │   ├── approx v0.5.1 (*)
-│       │   ├── num-complex v0.4.4 (*)
-│       │   ├── num-traits v0.2.17 (*)
-│       │   ├── paste v1.0.12 (proc-macro)
-│       │   └── wide v0.7.13
-│       │       ├── bytemuck v1.14.0
-│       │       └── safe_arch v0.7.1
-│       │           └── bytemuck v1.14.0
-│       └── typenum v1.16.0
-├── more-asserts v0.3.1
-├── nalgebra v0.32.3 (*)
-├── p256 v0.13.2 (*)
-├── pretty_assertions v1.4.0
-│   ├── diff v0.1.13
-│   └── yansi v0.5.1
-├── rustversion v1.0.14 (proc-macro)
-├── serde v1.0.192 (*)
-├── serde_json v1.0.108 (*)
-├── soroban-bench-utils v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-bench-utils) (*)
-├── soroban-env-macros v27.0.0 (proc-macro) (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-macros) (*)
-├── soroban-synth-wasm v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-synth-wasm)
-│   ├── arbitrary v1.3.2 (*)
-│   ├── soroban-env-common v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-common) (*)
-│   ├── soroban-env-macros v27.0.0 (proc-macro) (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-macros) (*)
-│   ├── stellar-xdr v27.0.0 (*)
-│   ├── wasm-encoder v0.38.1
-│   │   └── leb128 v0.2.5
-│   └── wasmparser v0.116.1 (*)
-│   [dev-dependencies]
-│   ├── expect-test v1.4.1 (*)
-│   └── wasmprinter v0.2.72
-│       ├── anyhow v1.0.75
-│       └── wasmparser v0.116.1 (*)
-├── soroban-test-wasms v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-test-wasms)
-├── tabwriter v1.3.0
-│   └── unicode-width v0.1.11
-├── textplots v0.8.4
-│   ├── drawille v0.3.0
-│   │   ├── colored v2.0.4
-│   │   │   ├── is-terminal v0.4.9
-│   │   │   │   ├── hermit-abi v0.3.3
-│   │   │   │   ├── rustix v0.38.23
-│   │   │   │   │   ├── bitflags v2.4.1
-│   │   │   │   │   ├── errno v0.3.6
-│   │   │   │   │   │   ├── libc v0.2.176
-│   │   │   │   │   │   └── windows-sys v0.48.0
-│   │   │   │   │   │       └── windows-targets v0.48.5
-│   │   │   │   │   │           ├── windows_aarch64_gnullvm v0.48.5
-│   │   │   │   │   │           ├── windows_aarch64_msvc v0.48.5
-│   │   │   │   │   │           ├── windows_i686_gnu v0.48.5
-│   │   │   │   │   │           ├── windows_i686_msvc v0.48.5
-│   │   │   │   │   │           ├── windows_x86_64_gnu v0.48.5
-│   │   │   │   │   │           ├── windows_x86_64_gnullvm v0.48.5
-│   │   │   │   │   │           └── windows_x86_64_msvc v0.48.5
-│   │   │   │   │   ├── libc v0.2.176
-│   │   │   │   │   ├── linux-raw-sys v0.4.11
-│   │   │   │   │   └── windows-sys v0.48.0 (*)
-│   │   │   │   └── windows-sys v0.48.0 (*)
-│   │   │   ├── lazy_static v1.5.0
-│   │   │   └── windows-sys v0.48.0 (*)
-│   │   └── fnv v1.0.7
-│   └── rgb v0.8.37
-│       └── bytemuck v1.14.0
-├── thousands v0.2.0
-├── wasm-encoder v0.38.1 (*)
-├── wasmprinter v0.2.72 (*)
-└── wycheproof v0.5.1
-    ├── base64 v0.21.5
-    ├── hex v0.4.3
-    ├── serde v1.0.192 (*)
-    └── serde_json v1.0.108 (*)
-
-soroban-env-macros v27.0.0 (proc-macro) (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-macros) (*)
-
-soroban-fuzz-targets v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-fuzz-targets)
-├── arbitrary v1.3.2 (*)
-├── soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-host) (*)
-├── soroban-synth-wasm v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-synth-wasm) (*)
-├── soroban-wasmi v0.31.1-soroban.20.0.1 (https://github.com/stellar/wasmi?rev=0ed3f3dee30dc41ebe21972399e0a73a41944aa0#0ed3f3de) (*)
-└── wasm-smith v0.13.1
-    ├── arbitrary v1.3.2 (*)
-    ├── flagset v0.4.7
-    ├── indexmap v2.0.2 (*)
-    ├── leb128 v0.2.5
-    └── wasm-encoder v0.38.1 (*)
-
-soroban-simulation v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-simulation)
-├── anyhow v1.0.75
-├── rand v0.8.5 (*)
-├── soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-host) (*)
-├── static_assertions v1.1.0
-└── thiserror v1.0.40
-    └── thiserror-impl v1.0.40 (proc-macro)
-        ├── proc-macro2 v1.0.69 (*)
-        ├── quote v1.0.33 (*)
-        └── syn v2.0.39 (*)
-[dev-dependencies]
-├── expect-test v1.4.1 (*)
-├── pretty_assertions v1.4.0 (*)
-├── soroban-env-host v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-host) (*)
-├── soroban-test-wasms v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-test-wasms)
-└── tap v1.0.1
-
-soroban-synth-wasm v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-synth-wasm) (*)
-
-soroban-test-wasms v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-test-wasms)
-
-test_no_std v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-common/tests/no_std)
-└── soroban-env-common v27.0.0 (/Users/coolman/Code/stellar-risc0-fork/stellar-core/src/rust/soroban/p27/soroban-env-common) (*)
